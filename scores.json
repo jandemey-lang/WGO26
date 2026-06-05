@@ -1,0 +1,50 @@
+{
+  "settings": {
+    "eventName": "Finalist Judging",
+    "judges": [
+      "Judge 1",
+      "Judge 2",
+      "Judge 3",
+      "Judge 4",
+      "Judge 5",
+      "Judge 6",
+      "Judge 7",
+      "Judge 8",
+      "Judge 9"
+    ],
+    "judgePins": [
+      "1001",
+      "1002",
+      "1003",
+      "1004",
+      "1005",
+      "1006",
+      "1007",
+      "1008",
+      "1009"
+    ],
+    "finalists": [
+      "Finalist 1",
+      "Finalist 2",
+      "Finalist 3",
+      "Finalist 4",
+      "Finalist 5",
+      "Finalist 6",
+      "Finalist 7",
+      "Finalist 8",
+      "Finalist 9",
+      "Finalist 10",
+      "Finalist 11",
+      "Finalist 12"
+    ],
+    "questions": [
+      "Question 1",
+      "Question 2",
+      "Question 3",
+      "Question 4",
+      "Question 5"
+    ]
+  },
+  "scores": {},
+  "updatedAt": "2026-06-05T13:58:14.799Z"
+}
