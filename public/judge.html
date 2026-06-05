@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Judge Scoring</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="judge-shell">
+      <header class="judge-header">
+        <div>
+          <p class="eyebrow" id="judgeName">Judge</p>
+          <h1 id="judgeEventName">Finalist Judging</h1>
+        </div>
+        <a href="/" class="screen-link small">Setup</a>
+      </header>
+
+      <section id="judgeLogin" class="panel login-panel">
+        <h2>Judge Access</h2>
+        <label class="field">
+          <span>Judge PIN</span>
+          <input id="judgePin" type="password" inputmode="numeric" autocomplete="current-password" />
+        </label>
+        <button id="judgeLoginButton" class="primary">Start scoring</button>
+        <p id="judgeLoginMessage" class="status-message"></p>
+      </section>
+
+      <div id="judgeArea" class="hidden">
+      <nav id="finalistTabs" class="tabs" aria-label="Finalists"></nav>
+      <section class="score-card">
+        <div class="candidate-head">
+          <div>
+            <p class="eyebrow">Now scoring</p>
+            <h2 id="activeFinalist">Finalist</h2>
+          </div>
+          <div id="completion" class="completion">0/5</div>
+        </div>
+        <div id="questionScores" class="question-list"></div>
+      </section>
+      </div>
+    </main>
+    <script src="/judge.js"></script>
+  </body>
+</html>

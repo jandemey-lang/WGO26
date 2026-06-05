@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Event Judging Tool</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="topbar">
+        <div>
+          <p class="eyebrow">Live event scoring</p>
+          <h1 id="eventName">Finalist Judging</h1>
+        </div>
+        <div class="action-row">
+          <button id="exportScores">Export scores</button>
+          <a class="screen-link" href="/results.html">Open big screen</a>
+        </div>
+      </section>
+
+      <section id="adminLogin" class="panel login-panel">
+        <h2>Admin Access</h2>
+        <label class="field">
+          <span>Admin PIN</span>
+          <input id="adminPin" type="password" inputmode="numeric" autocomplete="current-password" />
+        </label>
+        <button id="adminLoginButton" class="primary">Unlock setup</button>
+        <p id="adminLoginMessage" class="status-message"></p>
+      </section>
+
+      <div id="adminArea" class="hidden">
+      <section class="panel compact">
+        <h2>Judge Links</h2>
+        <div id="judgeLinks" class="judge-grid"></div>
+      </section>
+
+      <section class="panel">
+        <div class="section-head">
+          <h2>Event Setup</h2>
+          <button id="saveSettings" class="primary">Save names</button>
+        </div>
+        <label class="field full">
+          <span>Event name</span>
+          <input id="eventInput" type="text" />
+        </label>
+        <div class="setup-grid">
+          <div>
+            <h3>Finalists</h3>
+            <div id="finalistInputs" class="input-stack"></div>
+          </div>
+          <div>
+            <h3>Judges</h3>
+            <div id="judgeInputs" class="input-stack"></div>
+            <h3>Questions</h3>
+            <div id="questionInputs" class="input-stack"></div>
+            <div class="danger-zone">
+              <h3>Clear Scores</h3>
+              <p>This keeps names and questions but clears every submitted point.</p>
+              <div class="reset-row">
+                <input id="resetConfirm" type="text" placeholder="Type RESET" />
+                <button id="resetScores" class="danger">Clear scores</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      </div>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>
